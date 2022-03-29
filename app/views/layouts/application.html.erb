@@ -12,6 +12,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header></header>
+
+    <%= render "partials/notice" %>
+
+    <main class="container">
+      <%= yield %>
+    </main>
+
+    <footer></footer>
   </body>
 </html>
