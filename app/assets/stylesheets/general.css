@@ -1,0 +1,8 @@
+/**
+ * GENERAL
+ */
+body {
+	padding: 2rem;
+	min-height: 100vh;
+	background-image: linear-gradient(to right, rgb(248, 113, 113), rgb(244, 114, 182));
+}
