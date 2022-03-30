@@ -1,8 +1,11 @@
 <section class="box columns" id="<%= dom_id @product %>">
 
   <figure class="column">
-    <img src="<%= image_path "a-toilet.jpg" %>"
-      alt="photo of product <%= @product.title %>">
+    <% if @product.image.attached? %>
+      <%= image_tag @product.image, :alt => "photo of product " + @product.title %>
+    <% else %>
+      <%= image_tag image_path("a-toilet.jpg"), :alt => "photo of product " + @product.title %>
+    <% end %>
   </figure>
 
   <article class="column is-three-fifths">
