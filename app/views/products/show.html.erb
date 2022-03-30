@@ -2,7 +2,6 @@
 
   <figure class="column">
     <% if @product.image.attached? %>
-      <%= image_tag @product.image.variant(:thumb) %>
       <%= image_tag @product.image, :alt => "photo of product " + @product.title %>
     <% else %>
       <%= image_tag image_path("a-toilet.jpg"), :alt => "photo of product " + @product.title %>

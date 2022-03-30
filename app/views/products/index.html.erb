@@ -2,19 +2,19 @@
   <% @products.each do |product| %>
 
     <div class="column">
-
       <article class="card">
         <header class="card-image">
-          <figure class="image is-4by3">
+          <figure class="image">
             <a href="<%= product_path product.id %>">
               <% if product.image.attached? %>
                 <%= image_tag product.image.variant(:thumb) %>
               <% else %>
-                <%= image_tag image_path("a-toilet.jpg"), :alt => "photo of product " + product.title %>
+                <%= image_tag image_path("a-toilet.jpg"), :class => 'default', :alt => "photo of product " + product.title %>
               <% end %>
             </a>
           </figure>
         </header>
+
         <div class="card-content">
           <div class="media">
             <div class="media-content">
@@ -32,16 +32,9 @@
           </div>
         </div>
       </article>
-
     </div>
 
-    <!--
-    <%= render product %>
-    <p>
-      <%= link_to "Show this product", product %>
-    </p>
-    -->
   <% end %>
 </section>
 
-<%= link_to "New product", new_product_path %>
+<%= link_to "New product", new_product_path, class: "button is-dark" %>

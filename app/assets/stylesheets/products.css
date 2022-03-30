@@ -2,7 +2,30 @@
  * PRODUCTS
  */
 
-#products {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+.card .image {
+	height: 14rem;
+	overflow: hidden;
+}
+
+.card img {
+	min-height: 14rem;
+	object-fit: cover;
+}
+
+.card img.default {
+	transform: translateY(-40%);
+}
+
+@media screen and (min-width: 640px) {
+	#products {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 860px) {
+	#products {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
