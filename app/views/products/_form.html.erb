@@ -1,4 +1,5 @@
 <%= form_with(model: product, class: 'box') do |form| %>
+
   <% if product.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
