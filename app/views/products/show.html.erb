@@ -12,7 +12,8 @@
       </h1>
 
       <h2 class="subtitle is-3">
-        <%= @product.price %>
+        <%= number_to_currency @product.price, :unit => '€',
+          separator: ",", delimiter: " ", format: "%n %u" %>
       </h2>
     </header>
 
