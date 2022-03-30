@@ -1,10 +1,31 @@
-<h1>TOTO JE JEDEN KONKRETNY</h1>
+<section class="box columns" id="<%= dom_id @product %>">
 
-<%= render @product %>
+  <figure class="column">
+    <img src="<%= image_path "a-toilet.jpg" %>"
+      alt="photo of product <%= @product.title %>">
+  </figure>
 
-<div>
-  <%= link_to "Edit this product", edit_product_path(@product) %> |
-  <%= link_to "Back to products", products_path %>
+  <article class="column is-three-fifths">
+    <header class="block">
+      <h1 class="title is-2">
+        <%= @product.title %>
+      </h1>
 
-  <%= button_to "Destroy this product", @product, method: :delete %>
-</div>
+      <h2 class="subtitle is-3">
+        <%= @product.price %>
+      </h2>
+    </header>
+
+    <div class="content">
+      <%= @product.description %>
+    </div>
+
+    <%# TODO: logged in %>
+    <footer>
+      <%= link_to "Edit this product", edit_product_path(@product) %> |
+      <%= link_to "Back to products", products_path %>
+      <%= button_to "Destroy this product", @product, method: :delete %>
+    </footer>
+  </article>
+
+</section>
