@@ -1,12 +1,47 @@
-<h1>Products</h1>
-
-<div id="products">
+<section id="products" class="columns">
   <% @products.each do |product| %>
+
+    <div class="column">
+
+      <article class="card">
+        <header class="card-image">
+          <figure class="image is-4by3">
+            <a href="<%= product_path product.id %>">
+              <% if product.image.attached? %>
+                <%= image_tag product.image.variant(:thumb) %>
+              <% else %>
+                <%= image_tag image_path("a-toilet.jpg"), :alt => "photo of product " + product.title %>
+              <% end %>
+            </a>
+          </figure>
+        </header>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">
+                <%= link_to product.title, product %>
+              </p>
+              <p class="subtitle is-6">
+                <%= number_to_currency product.price, :unit => '€', separator: ",", delimiter: " ", format: "%n %u" %>
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <%= product.description %>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!--
     <%= render product %>
     <p>
       <%= link_to "Show this product", product %>
     </p>
+    -->
   <% end %>
-</div>
+</section>
 
 <%= link_to "New product", new_product_path %>
