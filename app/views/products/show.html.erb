@@ -20,9 +20,13 @@
         <%= number_to_currency @product.price, :unit => '€', separator: ",", delimiter: " ", format: "%n %u" %>
       </h2>
 
-      <h2 class="is-3">
-        <%= @product.reviews %>
-      </h2>
+      <% @product.reviews.each do |review| %>
+
+        <%= review.content %>,
+        <strong><%= review.rating %></strong>
+        <hr>
+
+      <% end %>
     </header>
 
   	<%# ADD TO CART %>
