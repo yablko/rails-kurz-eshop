@@ -1,0 +1,21 @@
+hello
+
+<!--
+
+<p>
+  <strong>
+    <%= @product.reviews.average(:rating) %>
+  </strong>
+</p>
+
+<% @product.reviews.each do |review| %>
+
+  <%= review.content %>,
+  <strong><%= review.rating %></strong>
+  <br>
+  <%= time_ago_in_words review.created_at %>
+  <hr>
+
+<% end %>
+
+-->
