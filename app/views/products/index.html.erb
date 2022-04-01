@@ -28,7 +28,7 @@
           </div>
 
           <div class="content">
-            <%= product.description %>
+            <%= product.description.to_plain_text.truncate(150) %>
           </div>
         </div>
       </article>
