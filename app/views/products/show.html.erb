@@ -19,6 +19,10 @@
       <h2 class="subtitle is-3">
         <%= number_to_currency @product.price, :unit => '€', separator: ",", delimiter: " ", format: "%n %u" %>
       </h2>
+
+      <h2 class="is-3">
+        <%= @product.reviews %>
+      </h2>
     </header>
 
   	<%# ADD TO CART %>

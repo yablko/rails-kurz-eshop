@@ -2,8 +2,9 @@
   <% @products.each do |product| %>
 
     <div class="column">
+
+      <%# THUMBNAIL %>
       <article class="card">
-        <%# THUMBNAIL %>
         <header class="card-image">
           <figure class="image">
             <a href="<%= product_path product.id %>">
@@ -40,6 +41,7 @@
           </div>
         </div>
       </article>
+
     </div>
 
   <% end %>

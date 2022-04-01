@@ -1,4 +1,6 @@
 class Product < ApplicationRecord
+  has_many :reviews
+
   validates :title, :description, :price, presence: true
   validates :price, numericality: true
 
