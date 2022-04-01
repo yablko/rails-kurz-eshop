@@ -14,3 +14,12 @@ body {
 form .is-grouped {
   margin-top: 2rem;
 }
+
+form .trix-content {
+  min-height: 12rem;
+}
+
+.edit-links {
+  display: flex;
+  justify-content: space-between;
+}

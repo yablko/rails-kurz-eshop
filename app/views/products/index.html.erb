@@ -3,6 +3,7 @@
 
     <div class="column">
       <article class="card">
+        <%# THUMBNAIL %>
         <header class="card-image">
           <figure class="image">
             <a href="<%= product_path product.id %>">
@@ -15,6 +16,7 @@
           </figure>
         </header>
 
+      	<%# HEADER %>
         <div class="card-content">
           <div class="media">
             <div class="media-content">
@@ -27,6 +29,12 @@
             </div>
           </div>
 
+          <%# ADD TO CART %>
+          <div class="block">
+            <a href="#" class="button is-link is-fullwidth">Add to cart</a>
+          </div>
+
+          <%# DESCRIPTION %>
           <div class="content">
             <%= product.description.to_plain_text.truncate(150) %>
           </div>

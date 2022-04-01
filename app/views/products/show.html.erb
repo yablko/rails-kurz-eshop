@@ -1,5 +1,6 @@
 <section class="box columns" id="<%= dom_id @product %>">
 
+  <%# PHOTO %>
   <figure class="column">
     <% if @product.image.attached? %>
       <%= image_tag @product.image, :alt => "photo of product " + @product.title %>
@@ -8,6 +9,7 @@
     <% end %>
   </figure>
 
+  <%# HEADER %>
   <article class="column is-three-fifths">
     <header class="block">
       <h1 class="title is-2">
@@ -19,15 +21,27 @@
       </h2>
     </header>
 
+  	<%# ADD TO CART %>
+    <div class="columns">
+      <div class="column is-half">
+        <a href="#" class="button is-link is-fullwidth">Add to cart</a>
+      </div>
+    </div>
+
+  	<%# DESCRIPTION %>
     <div class="content">
       <%= @product.description %>
     </div>
 
     <%# TODO: logged in %>
-    <footer>
-      <%= link_to "Edit this product", edit_product_path(@product) %> |
-      <%= link_to "Back to products", products_path %>
-      <%= button_to "Destroy this product", @product, method: :delete %>
+    <footer class="edit-links">
+      <div class="buttons has-addons">
+        <%= link_to "⇦ back", products_path, class: "button" %>
+        <%= link_to "✎ edit product", edit_product_path(@product), class: "button" %>
+      </div>
+
+      <%= button_to "🗑", @product, method: :delete, class: "button",
+        onclick: "return confirm('are you sure you want to delete this?');" %>
     </footer>
   </article>
 
