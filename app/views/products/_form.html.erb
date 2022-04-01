@@ -1,38 +1,49 @@
 <%= form_with(model: product, class: 'box') do |form| %>
+  <%= render "partials/form_errors", record: product %>
 
-  <% if product.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+	<%# TITLE %>
+	<div class="field">
+	  <%= form.label :title, class: 'label' %>
 
-      <ul>
-        <% product.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+	  <p class="control">
+	    <%= form.text_field :title, placeholder: 'Product name', class: 'input' %>
+	  </p>
+	</div>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
+	<%# DESCRIPTION %>
+	<div class="field">
+	  <%= form.label :description, class: 'label' %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.rich_text_area :description %>
-  </div>
+	  <p class="control">
+	    <%= form.rich_text_area :description %>
+	  </p>
+	</div>
 
-  <div>
-    <%= form.label :price, style: "display: block" %>
-    <%= form.text_field :price %>
-  </div>
+	<%# PRICE %>
+	<div class="field">
+	  <%= form.label :price, class: 'label' %>
 
-  <div>
-    <%= form.label :image, style: "display: block" %>
-    <%= form.file_field :image %>
-  </div>
+	  <p class="control">
+	    <%= form.text_field :price, placeholder: '€', class: 'input' %>
+	  </p>
+	</div>
 
-  <div>
-    <%= form.submit %>
+	<%# UPLOAD IMAGE %>
+	<div class="field">
+	  <%= form.label :image, class: 'label' %>
+
+	  <p class="control">
+	    <%= form.file_field :image, class: 'input' %>
+	  </p>
+	</div>
+
+  <div class="field is-grouped">
+    <p class="control">
+      <%= form.submit class: 'button is-success' %>
+    </p>
+
+    <p class="control">
+      <%= link_to "Cancel", products_path, class: 'button' %>
+    </p>
   </div>
 <% end %>

@@ -10,3 +10,7 @@ body {
 .title {
 	font-weight: 900;
 }
+
+form .is-grouped {
+  margin-top: 2rem;
+}

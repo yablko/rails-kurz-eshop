@@ -1,0 +1,11 @@
+<% if record.errors.any? %>
+
+    <ul class="notification is-danger">
+      <% record.errors.each do |error| %>
+        <li>
+          <strong><%= error.full_message %></strong>
+        </li>
+      <% end %>
+    </ul>
+
+<% end %>
