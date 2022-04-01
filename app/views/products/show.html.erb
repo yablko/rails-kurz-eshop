@@ -20,7 +20,7 @@
         <%= number_to_currency @product.price, :unit => '€', separator: ",", delimiter: " ", format: "%n %u" %>
       </h2>
 
-      <%= render "reviews", product: @product %>
+      <%= render "reviews", product: @product if @product.reviews.exists? %>
     </header>
 
   	<%# ADD TO CART %>

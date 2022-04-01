@@ -1,6 +1,23 @@
-hello
+<p class="ratings">
+  <% rating = product.reviews.average(:rating).round %>
 
-<!--
+  <% for i in 1..5 do  %>
+
+    <% if i <= rating %>
+      <span class="full_star">★</span>
+    <% else %>
+      <span class="no_star">☆</span>
+    <% end %>
+
+  <% end  %>
+
+  <small>
+    (<%= rating %>/5)
+  </small>
+</p>
+
+<%
+=begin
 
 <p>
   <strong>
@@ -13,9 +30,10 @@ hello
   <%= review.content %>,
   <strong><%= review.rating %></strong>
   <br>
+  <%= time_tag review.created_at %>
   <%= time_ago_in_words review.created_at %>
   <hr>
 
 <% end %>
 
--->
+=end %>
