@@ -120,9 +120,26 @@ https://github.com/faker-ruby/faker
 Chyť môj kód a vylepši.  
 Pár nápadov, čo s ním môžeš spraviť:  
   
-**a) **
+**a) REVIEWS**
+- vyrob pekný view pre textové recenzie  
+- pridaj formulár pre pridanie novej recenzie  
+- validácia pre recenzie   
+- rating recenzie musí byť iba celé číslo v rozmedzí 0-5  
+    
+**b) FAKER GEM**
+- skús do rails doinštalovať gem (napríklad faker)  
+- skús fakerom vygenerovať hodnoty do databázy  
+
+**c) SLUG GEM**
+- namiesto ID a adrese nech sa zobrazí pekný SEO friendly text  
+- skús napr. https://norman.github.io/friendly_id    
+ 
+**d) EDIT FORM**
+- pridaj fotku produktu do edit formu (ak nejakú má)  
+- pridaj možnosť vymazať fotky od produktu  
+
+To je pár vecí, ktoré môžeš dorobiť do mojej appky.  
+Ale samozrejme najlepší je tvoj vlastný projekt!  
+Skús si Rails na niečom, na čom ti záleží.
   
-[ TODO: ]
-- pridat ulohy;)
-  
-♥️
+♥️  
