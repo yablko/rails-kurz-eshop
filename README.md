@@ -33,6 +33,33 @@ Sľubujem, že to možno nie je kult a patróni majú moje videá a kurzy skôr.
 
 Moji [patróni](https://www.patreon.com/yablko) majú 20 minútový bonusový kurz o tom, ako nainštalovať Rails na Windows. Ak ho chceš, pridaj sa na patreon.
 
+Tu je zopár zdrojov ako Rails (a Ruby) nainštalovať a spojazdniť. Google je každopádne tvoj kamarát. Ja som zlučoval rôzne zdroje, pokusy a plieskania hlavy o steny kým sa to nepodarilo. Prípadne skús pootravovať ľudí z http://rubyslava.sk/ verím, že príde pomoc. Ak by bola potrebná.  
+
+
+
+.
+.
+.
+
+Na Intel Macu som musel do **.zshrc** pridať:  
+
+```
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
+```
+
+Na M1 Macu som musel do **.zshrc** pridať:  
+
+```
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
+export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.1.0/bin:$PATH"
+```
 
 ---
 
