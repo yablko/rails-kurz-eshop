@@ -11,7 +11,7 @@ Služby ako **Twitch, GitHub a Airbnb** stoja na **Rails**.
 
 ---
 
-### VIDEO, kde ťa naučím hru spraviť, krok za krokom:
+### VIDEO, kde ťa naučím Rails, krok za krokom:
   
 :: https://youtu.be/upQ5-1syuJU
 
