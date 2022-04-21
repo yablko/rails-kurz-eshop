@@ -15,7 +15,7 @@ Služby ako **Twitch, GitHub a Airbnb** stoja na **Rails**.
   
 :: https://youtu.be/upQ5-1syuJU
 
-[![youtube tutorial link](slovka_thumb.jpg)](https://youtu.be/upQ5-1syuJU)
+[![youtube tutorial link](rails-od-zakladov.png)](https://youtu.be/upQ5-1syuJU)
   
 V branchoch vidíš, ako sa kód vyvíjal.
 
