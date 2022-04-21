@@ -35,11 +35,12 @@ Moji [patróni](https://www.patreon.com/yablko) majú 20 minútový bonusový ku
 
 Tu je zopár zdrojov ako Rails (a Ruby) nainštalovať a spojazdniť. Google je každopádne tvoj kamarát. Ja som zlučoval rôzne zdroje, pokusy a plieskania hlavy o steny kým sa to nepodarilo. Prípadne skús pootravovať ľudí z http://rubyslava.sk/ verím, že príde pomoc. Ak by bola potrebná.  
 
-
-
-.
-.
-.
+https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-project-installing-rails  
+https://www.moncefbelyamani.com/the-definitive-guide-to-installing-ruby-gems-on-a-mac/#homebrew-ruby  
+  
+https://www.youtube.com/watch?v=_AJTGLCNRHQ  
+https://www.youtube.com/watch?v=jm9VgIfnFv8  
+https://www.youtube.com/watch?v=Qn-1egqgsnM  
 
 Na Intel Macu som musel do **.zshrc** pridať:  
 
@@ -114,76 +115,14 @@ https://github.com/faker-ruby/faker
   
 ---  
   
-### Chceš sa zlepšiť v programovaní?  
+### Chceš sa Rails načiť naozaj? Úlohy!  
 
 Chyť môj kód a vylepši.  
 Pár nápadov, čo s ním môžeš spraviť:  
   
-**a) KLÁVESNICA + MOBILE**
+**a) **
   
-Kód musí fungovať aj na mobiloch.    
-Väčšina toho je hotová. Zvyšok dokonči.   
-  
-**b) animationend**  
-  
-Prerob judgeResult() na animationend.    
-Vo videu poviem prečo. A poviem to aj tu: je to lepšie.    
-  
-**c) FARBOSLEPÝ REŽIM**  
-  
-Nie každý jasne vidí rozdiel medzi týmito farbami.  
-Pridaj farboslepý režim.  
-Nech každý môže hrať komfortne.  
-    
-**d) RIEŠENIE ZA BOARDOM**  
-  
-Keď board vypadne, odhalí sa riešenie.  
-Ako keby celý čas svietilo za ním.  
-  
-**e) ŠTATISTIKY**  
-  
-Toto je pokročilé. Meraj koľko pokusov človek potreboval.  
-Meraj streak. Že koľko správne trafil po sebe.  
-Meraj percentuálnu úspešnosť.  
-Meraj čas, ako dlho trvalo riešenie.  
-  
-**f) RAZ DENNE**  
-  
-Wordle každý deň vyberie jedno slovo.  
-Môžeš hádať len raz denne.  
-Sprav to!  
-  
-**g) FRAMEWORK**  
-  
-Prerob to do Vue.js, Svelte, Reactu.   
-Prerob to do čohokoľvek, čo sa chceš naučiť.  
-Ja to robím, keď sa učím niečo nové.  
-Skúsim v tom vyrobiť skutočnú vec.  
-
-**h) CHYBNÁ ANIMÁCIA**  
-
-Nech sa použité písmená dole v klávesnici vyznačia až po skončení animácie.  
-Teraz bliknú hneď na farbu, už pocaš toho, ako sa písmená hore otáčajú.  
-  
-**Plus - a toto je dôležitejšie - nevyznačuje sa správny počet písmen.**  
-V kóde kurzu ak sa písmeno v slove opakuje, vyznačí sa len prvé.  
-V kurze ti hovorím, že oprav to. A hovorím to znova, tu!  
-
-**i) UKLADAJ SLOVÁ**  
-
-Teoreticky sa môže stať, že hra vyberie po sebe to isté slová.  
-Ukladaj slová, ktoré už boli použité.  
-Aby sa vždy vyberali nové a nové slová.  
-  
-**j) 6 PÍSMEN**  
-  
-Prerob hru na 6 písmenové slová.  
-Reálne - prerob hru všeobecne. Na N-písmenové slová.  
-Ak zadáš, že chceš 3 písmená, nakreslí sa 3-písmenová herná plocha.  
-A tak!  
-  
-**k) VYMYSLI SI VLASTNÉ ÚLOHY**  
-Lepšie, ako moje.  
-Tak sa učíš!
+[ TODO: ]
+- pridat ulohy;)
   
 ♥️
