@@ -66,13 +66,14 @@ export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.1.0/bin:$P
 ### KURZY, ktoré spomínam vo videu (trochu si spravím reklamu)
   
 HTML a CSS od základov https://youtu.be/LULd0858mUQ  
-WEBREBEL kurz tu https://www.learn2code.sk/kurzy/webrebel-1-html-css-javascript  
+WEBREBEL kurz tu https://skillmea.sk/kurzy/webrebel-1-html-css-javascript  
+Tailwind CSS kurz https://skillmea.sk/kurzy/tailwind-css  
+Základy programovania a OOP kurz https://skillmea.sk/kurzy/zaklady-programovania-a-oop  
+Laravel kurz https://skillmea.sk/kurzy/webrebel-3-oop-a-laravel  
+Všetky moje learn2code kurzy https://skillmea.sk/lektor/roman-hraska 1300+ videí  
+  
 Skús webrebel ZDARMA https://www.youtube.com/playlist?list=PL3VwAXKvhemVw5DnAqeGbZx5AgEQT27xF  
-JavaScript a ES6 kurz https://www.learn2code.sk/kurzy/online-kurz-javascript-es  
-Základy programovania a OOP kurz https://www.learn2code.sk/kurzy/zaklady-programovania-a-oop  
-Všetky moje learn2code kurzy https://www.learn2code.sk/instruktori/roman-hraska 1300+ videí  
-Predplatné (dostaneš všetko, čo existuje) https://www.learn2code.sk/predplatne  
-Tu nájdeš kopu ukážok z mojich kurzov, skús si ich ZDARMA https://www.youtube.com/c/Yablko/playlists?view=1&sort=dd&shelf_id=0
+Tu nájdeš kopu ukážok z mojich kurzov, skús si ich ZDARMA https://www.youtube.com/c/Yablko/playlists?view=1&sort=dd&shelf_id=0  
 
 ---
 
